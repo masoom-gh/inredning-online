@@ -1,0 +1,23 @@
+﻿@model ProductsListViewModel
+
+<div class="container">
+    <p>Add items to your project. In the submission page, you will 
+        be able to give a name to the project and add a description for it. 
+        Here is a summary of your project:</p>
+    <div class="col-12 text-center">
+        @await Component.InvokeAsync("ProjectSummary")
+    </div>
+
+    <div class="row m-1 p-1">
+        <div id="categories" class="col-3">
+            @await Component.InvokeAsync("NavigationMenu")
+        </div>
+        <div class="col-9">
+            @foreach (var p in Model.Products)
+            {
+                <partial name="ProductSummary" model="p"/>
+            }
+        </div>
+    </div>
+</div>
+

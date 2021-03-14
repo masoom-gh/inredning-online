@@ -1,0 +1,24 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ee69e40e_002D3756_002D468e_002D9816_002D751da44603eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HomeControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProductControllerTests.Can_Use_Repository&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProductControllerTests.Can_Filter_Products&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.NavigationMenuViewComponentTests.Can_Select_Categories&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.NavigationMenuViewComponentTests.Indicates_Selected_Category&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectTests.Can_Add_New_Item&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectTests.Can_Add_Quantity_Of_Existing_Items&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectTests.Can_Remove_Item_From_Project&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectTests.Can_Clear_Project&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.NavigationMenuViewComponentTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectPageTests.Ca_Load_Project&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectPageTests.Can_Update_Cart&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsControllerTests.Cannot_Submit_Empty_Project&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsControllerTests.Cannot_Submit_Invalid_ProjectDetails&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsControllerTests.Can_Submit_Project_And_Complete_Submission&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsRepositoryTests.Can_Get_ProjectDetails_By_ID&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProductControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsRepositoryTests.Can_Get_List_Of_Projects_For_Current_User&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsRepositoryTests.Can_Get_ProjectDetails_Valid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B5651183-EC0B-4DC2-A747-0F2FB700E967::.NETCoreApp,Version=v3.1::InredningOnline.Tests.ProjectDetailsRepositoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

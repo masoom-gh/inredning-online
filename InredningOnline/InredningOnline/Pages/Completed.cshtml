@@ -1,0 +1,20 @@
+﻿@page
+
+    <div class="container m-1 p-1">
+        <div class="text-center">
+            <p>Submission of the project with the following details completed:</p>
+            <h3>Project Id: @ProjectDetailsId</h3>
+            <div class="m-2">
+                <a class="btn btn-primary" asp-controller="UserPanel" asp-action="Index">Go back to the user panel</a>
+            </div>
+        </div>
+    </div>
+
+    @functions
+{
+        [BindProperty(SupportsGet = true)]
+        public string ProjectDetailsId { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string ProjectName { get; set; }
+    }

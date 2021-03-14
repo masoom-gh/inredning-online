@@ -1,0 +1,27 @@
+﻿@model Project
+
+<div>
+
+    <a class="btn btn-sm btn-secondary navbar-btn" asp-page="/Project"
+       asp-rout-returnurl="@ViewContext.HttpContext.Request.PathAndQuery()">
+        <i class="fa fa-file-contract"></i>
+    </a>
+
+    @if (Model.ProjectItems.Count() == 0)
+    {
+        <small class="navbar-text">
+            <b>Your Project: </b>
+            no items added yet
+        </small>
+    }
+    else if (Model.ProjectItems.Count() > 0)
+    {
+        <small class="navbar-text">
+            <b>Project Summary: </b>
+            @Model.ProjectItems.Sum(x => x.Quantity) item(s)
+            @Model.CalculateTotalValue().ToString("c")
+        </small>
+    }
+
+
+</div>

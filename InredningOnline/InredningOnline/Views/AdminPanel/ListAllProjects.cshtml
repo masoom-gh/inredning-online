@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ProjectDetails>
+
+<div class="container m-2 p-2">
+    <h2>@ViewBag.TableTitle</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th class="text-center">Project Id</th>
+            <th class="text-right">Project Responsible</th>
+            <th class="text-right">Project Name</th>
+            <th class="text-right">Description</th>
+            <th class="text-center">Date Created</th>
+            <th class="text-center">Project Expense</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td class="text-center">@project.ProjectDetailsId</td>
+                <td class="text-right">@project.FirstName @project.LastName</td>
+                <td class="text-right">@project.ProjectName</td>
+                <td class="text-right">@project.Description</td>
+                <td class="text-center">@project.ProjectCreated</td>
+                <td class="text-center">
+                    @project.CalculateTotalExpenseOfEachProject().ToString("c")
+                </td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+        <tr>
+            <td class="text-right" colspan="5">Total expense of all project</td>
+            <td class="text-center">@ViewBag.TotalExpense.ToString("c")</td>
+        </tr>
+        </tfoot>
+    </table>
+
+</div>

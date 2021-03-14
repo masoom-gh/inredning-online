@@ -1,0 +1,51 @@
+﻿@page
+
+@model ProjectModel
+
+    <div class="container">
+        <h2>@Model.Project.ProjectName</h2>
+        <table class="table table-active table-striped">
+            <thead>
+                <tr>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Item</th>
+                    <th class="text-center">Supplier</th>
+                    <th class="text-right">Price/item</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Project.ProjectItems)
+                {
+                    <tr>
+                        <td class="text-center">@item.Quantity</td>
+                        <td class="text-center">@item.Product.Name</td>
+                        <td class="text-center">@item.Product.Supplier</td>
+                        <td class="text-right">
+                            @item.Product.Price.ToString("c")
+                        </td>
+                        <td class="text-center">
+                            <form asp-page-handler="Remove" method="post">
+                                <input type="hidden" name="ProductId" value="@item.Product.ProductId" />
+                                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                                <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Total price:</td>
+                    <td class="text-right">
+                        @Model.Project.CalculateTotalValue().ToString("c")
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="text-center">
+            <a class="btn btn-primary" href="@Model.ReturnUrl">Add more items</a>
+            <a class="btn btn-primary" asp-action="SubmitProject" asp-controller="ProjectDetails">Submit Project</a>
+        </div>
+</div>

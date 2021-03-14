@@ -1,0 +1,25 @@
+﻿@model Product
+
+    <div class="card card-outline-primary m-1 p-1">
+        <div class="bg-faded p-1">
+            <h4>
+                @Model.Name
+                <span class="badge " style="float:right">
+                    <h4>@Model.Price.ToString("c")</h4>
+                </span>
+            </h4>
+            <h6>Supplier: @Model.Supplier</h6>
+        </div>
+        <form id="@Model.ProductId" asp-page="/Project" method="post">
+            <input type="hidden" asp-for="ProductId" />
+            <input type="hidden" name="returnUrl"
+                   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+            <span class="card-text p-1">
+                @Model.Description
+                <button type="submit"
+                        class="btn btn-success btn-sm pull-right" style="float:right">
+                    Add Item
+                </button>
+            </span>
+        </form>
+    </div>

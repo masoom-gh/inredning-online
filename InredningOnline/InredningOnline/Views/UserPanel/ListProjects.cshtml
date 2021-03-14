@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProjectDetails>
+
+<div class="container m-2 p-2">
+    <h2>Submitted Projects for Current User</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th class="text-center">Project Id</th>
+            <th class="text-left">Project Name</th>
+            <th class="text-left">Description</th>
+            <th class="text-center">Date Created</th>
+            <th class="text-center">Expenses</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td class="text-center">@project.ProjectDetailsId</td>
+                <td class="text-left">@project.ProjectName</td>
+                <td class="text-left">@project.Description</td>
+                <td class="text-center">@project.ProjectCreated</td>
+                <td class="text-center">
+                    @project.CalculateTotalExpenseOfEachProject().ToString("c")
+                </td>
+                <td class="text-center">
+                    <a class="btn btn-warning" asp-controller="UserPanel" 
+                       asp-action="Detail" asp-route-projectDetailsId="@project.ProjectDetailsId">
+                        Details
+                    </a>
+                </td>
+                <td class="text-center">
+                    <a class="btn btn-secondary" asp-controller="UserPanel" 
+                       asp-action="Edit" asp-route-projectDetailsId="@project.ProjectDetailsId">
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

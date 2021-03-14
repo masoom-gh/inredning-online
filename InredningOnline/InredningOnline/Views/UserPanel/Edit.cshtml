@@ -1,0 +1,46 @@
+﻿@model ProjectDetails
+
+<div class="container">
+    <form method="post">
+        <p>
+            <label asp-for="@Model.ProjectName">Project Name:</label>
+            <input asp-for="@Model.ProjectName" 
+                   value="@Model.ProjectName"/>
+        </p>
+        <p>
+            <label asp-for="@Model.Description">Description:</label>
+            <input asp-for="@Model.Description" 
+                   value="@Model.Description"/>
+        </p>
+
+
+
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Item</th>
+                    <th class="text-center">Supplier</th>
+                    <th class="text-center">Price/item</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.ProjectItems.Count; i++)
+                {
+                    <tr>
+                        <td class="text-center"><input asp-for="@Model.ProjectItems[i].Quantity"  min="1"/></td>
+                        <td class="text-center">@Model.ProjectItems[i].Product.Name</td>
+                        <td class="text-center">@Model.ProjectItems[i].Product.Supplier</td>
+                        <td class="text-center">
+                            @Model.ProjectItems[i].Product.Price.ToString("c")
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+        <p><button type="submit">Update</button></p>
+    </form>
+</div>
